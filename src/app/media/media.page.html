@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-label>Tempo - Horas</ion-label>
+    <ion-input type="number" [(ngModel)]="tempo"></ion-input>
+    
+    <ion-label>Distancia - Km</ion-label>
+    <ion-input type="number"  [(ngModel)]="distancia"></ion-input>
+
+    <ion-button (click)="enviadados()" expand="full" color="secondary"> Cacular K/H</ion-button>   
+
+ <ion-button color="danger" expand="full"  (click)="closeModal()">
+   Fechar
+   </ion-button>
+  
+</ion-content>
